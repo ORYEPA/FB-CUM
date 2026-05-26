@@ -1,0 +1,167 @@
+/* CSS Custom Properties */
+:root {
+  --color-bg: #0a0a1a;
+  --color-blue: #4a9eff;
+  --color-purple: #9b59b6;
+  --color-white: #ffffff;
+  --color-card-bg: rgba(10, 10, 30, 0.85);
+  --card-blur: blur(12px);
+}
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Page Layout */
+.page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  background: var(--color-card-bg);
+  backdrop-filter: var(--card-blur);
+  -webkit-backdrop-filter: var(--card-blur);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  max-width: 560px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(74, 158, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* Floating Hearts Background Container */
+.bg-hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Individual Heart Element */
+.bg-heart {
+  position: absolute;
+  bottom: -80px;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  animation-name: floatHeart;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Float Heart Keyframe Animation (ported from FB source) */
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(10deg);
+    opacity: 0;
+  }
+}
+
+/* ASCII Cake */
+.ascii {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(0.55rem, 1.5vw, 0.85rem);
+  line-height: 1.2;
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Headings */
+h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--color-white);
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: var(--color-blue);
+  margin: 0.25rem 0 1rem;
+  font-weight: 400;
+}
+
+/* Badge / Pill for "Esclavo Rebelde" */
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  margin: 0.4rem 0;
+}
+
+/* Phrase display */
+.phrase {
+  margin: 1.25rem 0 0.75rem;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  line-height: 1.6;
+  color: var(--color-white);
+  opacity: 0.92;
+  font-style: italic;
+  min-height: 3.5em;
+}
+
+/* Cycle button */
+.phrase-btn {
+  background: transparent;
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
+  border-radius: 999px;
+  padding: 0.45rem 1.4rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.phrase-btn:hover {
+  background: var(--color-blue);
+  color: var(--color-bg);
+}
