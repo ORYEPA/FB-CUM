@@ -137,6 +137,28 @@ h2 {
   margin: 0.4rem 0;
 }
 
+/* Floating Photos Background */
+.bg-photos {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-photo {
+  position: absolute;
+  bottom: -120px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0;
+  border: 2px solid rgba(74, 158, 255, 0.4);
+  box-shadow: 0 0 16px rgba(155, 89, 182, 0.35);
+  animation-name: floatHeart;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 /* Phrase display */
 .phrase {
   margin: 1.25rem 0 0.75rem;
