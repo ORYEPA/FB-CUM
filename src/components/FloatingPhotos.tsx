@@ -137,23 +137,58 @@ const PHOTOS: string[] = [
   'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818177/IMG-20240221-WA0012_044033_evpqfy.jpg',
   'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818174/20230131_160109_wrg75w.jpg',
   'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818174/IMG-20231004-WA0036_044121_f4fhg3.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818173/5_sin_t%C3%ADtulo_e379fv.png',
   'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818173/IMG-20231004-WA0035_044125_dumsm0.jpg',
   'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818173/IMG-20231004-WA0034_044123_ldvmz1.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818173/3_sin_t%C3%ADtulo_u4tumw.png',
   'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818173/IMG-20231004-WA0033_044129_ya431s.jpg',
   'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818172/IMG-20231004-WA0032_044127_ukfo0z.jpg',
   'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818172/IMG-20231004-WA0031_044131_pmyjpe.jpg',
   'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779818171/IMG-20231004-WA0030_044132_cnq7zn.jpg',
+  // additional uploads
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775036/IMG-20250723-WA0008_043253_aootqe.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775035/IMG-20250714-WA0010_043425_tvmcqo.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775034/IMG-20250622-WA0001_043437_zrufdg.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775033/IMG-20241226-WA0012_043506_a9c3o5.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775031/IMG-20241224-WA0005_043508_lh5ter.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775030/IMG-20241223-WA0005_043511_qbehed.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775029/IMG-20240914-WA0039_043513_wnj1em.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775028/IMG-20240622-WA0008_043646_werbu7.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775027/IMG-20240604-WA0000_043648_fki9kc.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775026/IMG-20240412-WA0009_043704_yozhld.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775025/IMG-20240405-WA0006_043720_eafq7b.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775024/IMG-20240404-WA0018_043722_ixhu0w.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775023/IMG-20240403-WA0013_043728_ypmtbn.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775022/IMG-20240402-WA0034_043742_dwl2nf.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775021/IMG-20240402-WA0032_043745_hl0aiy.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775020/IMG-20240402-WA0030_043747_rk0he6.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775019/IMG-20240402-WA0029_043750_z8o5hl.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775018/IMG-20240402-WA0025_043803_wpwtsj.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775018/IMG-20240325-WA0005_043752_hbzwfc.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775016/IMG-20240318-WA0060_043914_anzgov.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775015/IMG-20240318-WA0038_043916_nqlwow.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775015/IMG-20240317-WA0015_043918_ltr2tf.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775014/IMG-20240304-WA0003_043920_mwex6l.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775013/IMG-20231213-WA0017_044036_yixhud.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775012/IMG-20231004-WA0036_044121_tmrwea.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775011/IMG-20231004-WA0035_044125_qliz0o.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775010/IMG-20231004-WA0034_044123_zlu9wj.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775008/IMG-20231004-WA0033_044129_irrneh.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775008/IMG-20231004-WA0032_044127_phzakq.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775008/IMG-20231004-WA0031_044131_chm9mw.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779775007/IMG-20231004-WA0030_044132_dkb4dy.jpg',
+  'https://res.cloudinary.com/dehfvnwdp/image/upload/v1779770861/fb/IMG-20240402-WA0030_043747_ftwexh.jpg',
 ]
 
 export default function FloatingPhotos() {
-  const items = useMemo(() => Array.from({ length: 24 }, (_, idx) => {
+  const items = useMemo(() => PHOTOS.map((src, idx) => {
     const base = 52 + (idx % 4) * 14
-    const size = Math.round(base + Math.random() * base * 0.3)
+    const size = Math.round(base + (((idx * 7) % 10) / 10) * base * 0.3)
     return {
       id: idx,
-      src: PHOTOS[idx % PHOTOS.length],
+      src,
       left: (idx * 13 + 3) % 93,
-      delay: idx * 0.9,
+      delay: idx * 0.7,
       duration: 13 + (idx % 7) * 2.5,
       size,
     }
