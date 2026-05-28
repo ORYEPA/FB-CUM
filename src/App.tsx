@@ -125,11 +125,8 @@ function shuffle<T>(arr: T[]): T[] {
 
 const PHRASES = shuffle(ALL_PHRASES)
 
-const EASTER_EGG = "Si encuentras este te debo unos wawis 🐶"
-
 function randomPhrase(current: string): string {
-  if (Math.random() < 0.01) return EASTER_EGG
-  const pool = PHRASES.filter(p => p !== current && p !== EASTER_EGG)
+  const pool = PHRASES.filter(p => p !== current)
   return pool[Math.floor(Math.random() * pool.length)]
 }
 
